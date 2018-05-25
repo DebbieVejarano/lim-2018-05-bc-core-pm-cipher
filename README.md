@@ -25,6 +25,7 @@ El interfaz permite quue el usuario:
 
 ### Cómo se logró
 Haciendo uso de HTML, CSS y JAVASCRIPT
+
 *HTML: Aquí se debe mencionar la creación del header. main y footer. Estos tres permiten etiquetar las partes principales. También debemos recordar que usamos etiquetas de formularios dentro del main.
 
 *CSS: Aquí se le dio estilos al header, footer, buttoms, inputs, textareas y label.
