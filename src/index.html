@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Envia mensajes secretos</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class = "headerFormat">
+        <h1 class = "title">CRIPTOMANÍA</h1>
+        <div class="rules">
+            <h2 class="inrules">¿Cómo funciona?</h2>
+            <p class="inrules">¡Muy facil! Primero escoges cuántas posiciones quieres que avance la letra que deseas cambiar. ¿Lo hiciste? Ahora solo cifra y descifra tu mensaje secreto. </p>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="user-number">
+            <label>Avanzar posiciones</label>
+          <!--  <select name="" id=""></select> -->
+            <input type="text" id="letterJumpUser" class="input-number">
+        </div>
+
+        <div class="container-btn">
+            <textarea class="text-one" id="firstText" cols="30" rows="10"></textarea>
+            <div class="divbuttom">
+                <button id="cipherButton" class = "button">Cifrar</button>
+                <button id="decipherButton" class = "button">Descifrar</button>
+            </div>
+            <textarea class="text-two" id="secondText" cols="30" rows="10"></textarea>
+<!--             <input type="text" id="firstText" class="input-one">
+            <input type="text" id="secondText" class="input-two"> -->
+        </div>
+        <button id="clean" class="button-clean">Limpiar</button>
+
+    </main>
+
+    <footer>
+        <h2>MÁS CRIPTOMANÍA </h2>
+        <span><a href="#">Envía tu código por whatsapp </a></span>
+
+    </footer>
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
