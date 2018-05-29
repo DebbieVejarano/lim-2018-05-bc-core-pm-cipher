@@ -42,8 +42,65 @@ cleanButton.addEventListener("click", () => {
 
 function caesarCipher(firstText, letterJump) {
     finalText = "";
-    for (var i=0; i<firstText.length;i++){
+    for (let i=0; i<firstText.length;i++){
 		finalText += String.fromCharCode(firstText.charCodeAt(i)+letterJump);
     }
     return finalText;
+
 }
+
+/* const message = prompt('Ingresa un mensaje');
+let n = 3;
+
+for (let i=0; i < message.length; i++){
+    //debugger
+    const x = message.charCodeAt(i);
+    
+    if (64<x && x<91){
+        //console.log(x);
+      let cipher = (x - 65 + n)%26 + 65;
+    console.log(String.fromCharCode(cipher));
+    } else if (96<x && x<123) {
+        let cipher = (x - 97 + n)%26 + 97;
+        console.log(String.fromCharCode(cipher));
+    } else {
+        console.log(String.fromCharCode(x));
+    }
+
+    
+}
+
+ */
+
+ //Descifrando
+
+//Descifrando
+
+/* for (let i=0; i < message.length; i++){
+    //debugger
+    const y = message.charCodeAt(i);
+    
+    if (64<y && y<91){
+        let result = (y - 65 - n)%26;
+        
+        if ( result >= 0) {
+        let decipher = result + 65;
+        console.log(String.fromCharCode(decipher));
+        } else {
+        let decipher = (result + 65) + 26;
+        console.log(String.fromCharCode(decipher));
+        }
+} else if ((96<y && y<123)){
+        let result = (y - 97 - n)%26;
+        
+        if ( result >= 0) {
+        let decipher = result + 97;
+        console.log(String.fromCharCode(decipher));
+        } else {
+        let decipher = (result + 97) + 26;
+        console.log(String.fromCharCode(decipher));
+        }
+} else {
+        console.log(String.fromCharCode(y));
+    }
+} */
