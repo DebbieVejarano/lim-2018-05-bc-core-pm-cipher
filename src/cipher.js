@@ -1,10 +1,9 @@
-/* const codificar = function codificar (offset , firstText) {
+const codificar =  (message , offset) => {
   let n = offset;
   let finalText = '';
 
-  for (let i=0; i < firstText.length; i++){
-    //debugger
-    const x = firstText.charCodeAt(i);
+  for (let i=0; i < message.length; i++){
+    const x = message.charCodeAt(i);
     
     if (64<x && x<91){
       let cipher = (x - 65 + n)%26 + 65;
@@ -16,18 +15,44 @@
       finalText += String.fromCharCode(x);
     }  
  }
- return finalText
+ return finalText;
 };
 
-const decodificar = function decodificar (offset, firstText) {
+const decodificar =   (message, offset) => {
   let n = offset;
-  let y = string;
+  let finalText = '';
 
-
+  for (let i=0; i < message.length; i++) {
+      const y = message.charCodeAt(i);
+         
+      if (64<y && y<91){
+          let result = (y - 65 - n)%26;
+             
+             if ( result >= 0) {
+             let decipher = result + 65;
+             finalText += String.fromCharCode(decipher);
+             } else {
+             let decipher = (result + 65) + 26;
+             finalText += String.fromCharCode(decipher);
+             }
+      } else if ((96<y && y<123)){
+             let result = (y - 97 - n)%26;
+             
+             if ( result >= 0) {
+             let decipher = result + 97;
+             finalText += String.fromCharCode(decipher);
+             } else {
+             let decipher = (result + 97) + 26;
+             finalText += String.fromCharCode(decipher);
+             }
+      } else {
+             finalText += String.fromCharCode(y);
+         }
+     }
+  return finalText;
 }; 
 
 window.cipher = {
   encode: codificar,
   decode: decodificar
 };
- */
