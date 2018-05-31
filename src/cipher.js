@@ -18,7 +18,7 @@ const codificar =  (message , offset) => {
  return finalText;
 };
 
-const decodificar =   (message, offset) => {
+const decode =   (message, offset) => {
   let n = offset;
   let finalText = '';
 
@@ -26,8 +26,7 @@ const decodificar =   (message, offset) => {
       const y = message.charCodeAt(i);
          
       if (64<y && y<91){
-          let result = (y - 65 - n)%26;
-             
+          let result = (y - 65 - n)%26;   
              if ( result >= 0) {
              let decipher = result + 65;
              finalText += String.fromCharCode(decipher);
@@ -54,5 +53,5 @@ const decodificar =   (message, offset) => {
 
 window.cipher = {
   encode: codificar,
-  decode: decodificar
+  decode: decode,
 };
