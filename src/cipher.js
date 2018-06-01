@@ -1,9 +1,10 @@
-const codificar =  (message , offset) => {
+//CIFRAR
+const encode =  (offset, string) => {
   let n = offset;
   let finalText = '';
 
-  for (let i=0; i < message.length; i++){
-    const x = message.charCodeAt(i);
+  for (let i=0; i < string.length; i++){
+    const x = string.charCodeAt(i);
     
     if (64<x && x<91){
       let cipher = (x - 65 + n)%26 + 65;
@@ -18,12 +19,13 @@ const codificar =  (message , offset) => {
  return finalText;
 };
 
-const decode =   (message, offset) => {
+//DESCIFRAR
+const decode =   (offset, string) => {
   let n = offset;
   let finalText = '';
 
-  for (let i=0; i < message.length; i++) {
-      const y = message.charCodeAt(i);
+  for (let i=0; i < string.length; i++) {
+      const y = string.charCodeAt(i);
          
       if (64<y && y<91){
           let result = (y - 65 - n)%26;   
@@ -51,7 +53,20 @@ const decode =   (message, offset) => {
   return finalText;
 }; 
 
+//HACKER EDITION
+const createCipherWithOffset = (offset) => {
+
+  let newObject =  {
+  encode: (string) => cipher.encode(offset, string),
+
+  decode: (string) => cipher.decode(offset,string)
+   }
+  return newObject;
+  }; 
+
+//OBJETO cipher
 window.cipher = {
-  encode: codificar,
+  encode: encode,
   decode: decode,
+  createCipherWithOffset: createCipherWithOffset
 };

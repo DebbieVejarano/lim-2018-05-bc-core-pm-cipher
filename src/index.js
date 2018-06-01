@@ -11,7 +11,7 @@ cipherButton.addEventListener("click", () => {
     letterJump = parseInt(document.getElementById("letterJump").value);
     //console.log(letterJump);
     //secondText.value = codificar (firstText.value, letterJump);
-    secondText.value = cipher.encode(firstText.value, letterJump);
+    secondText.value = cipher.encode(letterJump, firstText.value);
     //debugger
 })
 
@@ -19,7 +19,7 @@ cipherButton.addEventListener("click", () => {
 decipherButton.addEventListener("click", () => {
     letterJump = parseInt(document.getElementById("letterJump").value);
     //secondText.value = decodificar (firstText.value, letterJump);
-    secondText.value = cipher.decode (firstText.value, letterJump);
+    secondText.value = cipher.decode (letterJump, firstText.value);
 })
 
 //BOTÓN CLEAN
