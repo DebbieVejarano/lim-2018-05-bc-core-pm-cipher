@@ -55,7 +55,37 @@ describe('cipher', () => {
     });
 
     it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado', () => {
-      assert.equal(typeof cipher.createCipherWithOffset(), 'object');
+      assert.equal(typeof cipher.createCipherWithOffset(33), 'object');
+    });
+
+    it('el objeto debería tener una propiedad encode', ()=>{
+      assert.property(cipher.createCipherWithOffset(33), 'encode');
+    });
+
+    it('el objeto debería tener una propiedad decode', ()=>{
+      assert.property(cipher.createCipherWithOffset(33), 'decode');
+    });
+
+    describe('cipher.createCipherWithOffset().encode', () => {
+      it('debería ser una función', () => {
+        assert.equal(typeof cipher.createCipherWithOffset().encode, 'function')
+      });
+
+      it('debería retornar "haféqwulfd" para cipher.createCipherWithOffset(33).encode("excéntrica")', () => {
+        let result = cipher.createCipherWithOffset(3).encode("excéntrica");
+        assert.equal(result, "haféqwulfd");
+        });
+    });
+    
+    describe('cipher.createCipherWithOffset().decode', () => {
+      it('debería ser una función', () => {
+        assert.equal(typeof cipher.createCipherWithOffset().decode, 'function')
+      });
+
+      it('debería retornar "haféqwulfd" para cipher.createCipherWithOffset(33).encode("excéntrica")', () => {
+        let result = cipher.createCipherWithOffset(3).decode("haféqwulfd");
+        assert.equal(result, "excéntrica");
+        });
     });
 
   });

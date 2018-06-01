@@ -57,12 +57,13 @@ const decode =   (offset, string) => {
 const createCipherWithOffset = (offset) => {
 
   let newObject =  {
-  encode: (string) => cipher.encode(offset, string),
-
-  decode: (string) => cipher.decode(offset,string)
-   }
-  return newObject;
+    encode: (string) => encode(offset, string),
+    decode: (string) => decode(offset,string)
   }; 
+
+  return newObject;
+  
+};
 
 //OBJETO cipher
 window.cipher = {
