@@ -1,35 +1,63 @@
-# Cifrado César - Proyecto de Debbie Vejarano
+# Cifrado César 
+_Proyecto que resuelve el reto de cifrar y descifrar en código César._
+
+***
+Prueba nuestro demo final aquí: [https://debbievejarano.github.io/lim-2018-05-bc-core-pm-cipher/src/] (https://debbievejarano.github.io/lim-2018-05-bc-core-pm-cipher/src/)
+
+***
+##Ejecutar la aplicación localmente
+
+Necesitas instalar:
+* Gitb Bash
+
+Luego, debes **clonar** este repositorio a tu equipo.
+```bash
+git clone https://github.com/DebbieVejarano/lim-2018-05-bc-core-pm-cipher.git
+```
+
+##Instala dependencias
+Necesitas instalar:
+* Node.js®
+
+Luego, debes usar los comandos npm install 
+```
+npm instal
+```
+
+***
+# Objetivo
+El proyecto responde al reto de crear una aplicación que permita, a un grupo de amigos que planean una fiesta sorpresa, enviar mensajes cifrados y que posean una interfaz para descifrarlos.
 
 ## Definición del producto
 
-*Usuario: Según el planteamiento del problema estaría dedicado a satisfacer la necesidad de comunicacar mensajes, utilizando un lenguaje cifrado. El producto, en un principio beneficiaría a los amigos cercanos del cliente; sin embargo, ellos podrían hacerle publicidad boca a boca y por redes sociales a otros potenciales clientes.
+**Usuarios:** Estos serían la novia y los amigos que planifican una fiesta de cumpleaños sorpresa.
 
-*Objetivo de los usuarios: Los usuarios, por lo general, buscan una interfaz amigable, sencilla y que les permita realizarle algún tipo de configuración. En este caso, el producto presenta una página con texto que explica como usar el programa.
+**Objetivo de los usuarios: Enviar mensajes encriptados y poder descifrarlos en una interfaz sencilla y que no permita al cumpleañero enterarse de nada.
 
 *Consideraciones para la resolución de problemas de usuarios: El interfaz, que ha sido programado con JavaScrip, permite a los usuarios mandar los mensajes secretos manipulando una gran cantidad de carácteres como signos de puntuación, mayúsculas y más.
 
-### Interfaz
+## Interfaz
 El interfaz permite quue el usuario:
 
-*Indique cuántas posiciones desplazar carácteres para cifrarlos.
+* Indique cuántas posiciones desplazar carácteres para cifrarlos.
 
-*Insertar el mensaje que desea cifrar.
+* Insertar el mensaje que desea cifrar.
 
-*Ver el resultado del mensaje cifrado.
+* Ver el resultado del mensaje cifrado.
 
-*Insertar el mensaje que desea decifrar.
+* Insertar el mensaje que desea decifrar.
 
-*Ver el resultado del mensaje decifrado.
+* Ver el resultado del mensaje decifrado.
 
-*Limpiar texto ingresado.
+* Limpiar texto ingresado.
 
-### Cómo se logró
-Haciendo uso de HTML, CSS y JAVASCRIPT
+***
+## Detalles adicionales
+Encontrarás entre los archivos:
 
-*HTML: Aquí se debe mencionar la creación del header. main y footer. Estos tres permiten etiquetar las partes principales. También debemos recordar que usamos etiquetas de formularios dentro del main.
+* En la carpeta src, encontrarás un archivo `index.html` el cual contiene la estructura del proyecto. También en esta carpeta se encuentra `style.css` que pertenece a los estilos.
+* En la carpeta src, `cipher.js` contiene un objeto y dos métodos que se encargan de cifrar y descifrar. Por otro lado, en `index.js`se escuchan los eventos del DOM que invocan a los métodos de `cipher.js`.
 
-*CSS: Aquí se le dio estilos al header, footer, buttoms, inputs, textareas y label.
-
-*JAVASCRIPT: Aquí se hace uso de AddEventListenner para obtener los input de las textareas y también  el valor ingresado por el usuario en un input text para que avance o retroceda el caracter. Además, una función para encriptar el texto. Por otro lado, para descencritar usamos la misma función, restándole el valor como número entero de desplazamientos que colocó el usuario en el input label. Para evitar problemas al momento de desplazar los carácteres usamos solo el String.fromChareCode() y tener acceso a los carácteres del UNICODE.
+* En la carpeta test, se encuentra `cipher.spec.js`. Aquí se almacena el testing.
 
 
