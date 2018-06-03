@@ -1,11 +1,11 @@
 # Cifrado César 
-_Proyecto que resuelve el reto de cifrar y descifrar en código César._
+_Proyecto que resuelve el reto de cifrar y descifrar en código César_
 
 ***
-Prueba nuestro demo final aquí: [https://debbievejarano.github.io/lim-2018-05-bc-core-pm-cipher/src/] (https://debbievejarano.github.io/lim-2018-05-bc-core-pm-cipher/src/)
+Prueba nuestro demo final aquí: https://debbievejarano.github.io/lim-2018-05-bc-core-pm-cipher/src/
 
 ***
-##Ejecutar la aplicación localmente
+## Ejecutar la aplicación localmente
 
 Necesitas instalar:
 * Gitb Bash
@@ -15,7 +15,7 @@ Luego, debes **clonar** este repositorio a tu equipo.
 git clone https://github.com/DebbieVejarano/lim-2018-05-bc-core-pm-cipher.git
 ```
 
-##Instala dependencias
+## Instala dependencias
 Necesitas instalar:
 * Node.js®
 
@@ -32,9 +32,9 @@ El proyecto responde al reto de crear una aplicación que permita, a un grupo de
 
 **Usuarios:** Estos serían la novia y los amigos que planifican una fiesta de cumpleaños sorpresa.
 
-**Objetivo de los usuarios: Enviar mensajes encriptados y poder descifrarlos en una interfaz sencilla y que no permita al cumpleañero enterarse de nada.
+**Objetivo de los usuarios:** Enviar mensajes encriptados y poder descifrarlos en una interfaz sencilla y que no permita al cumpleañero enterarse de nada.
 
-*Consideraciones para la resolución de problemas de usuarios: El interfaz, que ha sido programado con JavaScrip, permite a los usuarios mandar los mensajes secretos manipulando una gran cantidad de carácteres como signos de puntuación, mayúsculas y más.
+**Consideraciones para la resolución de problemas de usuarios:** El interfaz, que ha sido programado con JavaScrip, permite a los usuarios mandar los mensajes secretos manipulando una gran cantidad de carácteres como signos de puntuación, mayúsculas y más.
 
 ## Interfaz
 El interfaz permite quue el usuario:
@@ -51,7 +51,6 @@ El interfaz permite quue el usuario:
 
 * Limpiar texto ingresado.
 
-***
 ## Detalles adicionales
 Encontrarás entre los archivos:
 
