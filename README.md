@@ -2,7 +2,7 @@
 _Proyecto que resuelve el reto de cifrar y descifrar en código César_
 
 ***
-Prueba nuestro demo final aquí: https://debbievejarano.github.io/lim-2018-05-bc-core-pm-cipher/src/
+Prueba el demo final aquí: https://debbievejarano.github.io/lim-2018-05-bc-core-pm-cipher/src/
 
 ***
 ## Ejecutar la aplicación localmente
@@ -19,7 +19,7 @@ git clone https://github.com/DebbieVejarano/lim-2018-05-bc-core-pm-cipher.git
 Necesitas instalar:
 * Node.js®
 
-Luego, debes usar los comandos npm install 
+Luego, debes usar el comando npm install 
 ```
 npm instal
 ```
@@ -34,12 +34,12 @@ El proyecto responde al reto de crear una aplicación que permita, a un grupo de
 
 **Objetivo de los usuarios:** Enviar mensajes encriptados y poder descifrarlos en una interfaz sencilla y que no permita al cumpleañero enterarse de nada.
 
-**Consideraciones para la resolución de problemas de usuarios:** El interfaz, que ha sido programado con JavaScrip, permite a los usuarios mandar los mensajes secretos manipulando una gran cantidad de carácteres como signos de puntuación, mayúsculas y más.
+**Consideraciones para la resolución de problemas de usuarios:** El interfaz permite a los usuarios cifrar y descifrar mensajes cortos y largos, con una cantidad de desplazamientos que ellos puedan escoger. Además, es intuituvo y rápido de aaprender a urilizar. Y finalmente, adaptable a dispositivos móviles.
 
 ## Interfaz
-El interfaz permite quue el usuario:
+El interfaz permite que el usuario:
 
-* Indique cuántas posiciones desplazar carácteres para cifrarlos.
+* Indique cuántas posiciones desplazar carácteres a cifrar.
 
 * Insertar el mensaje que desea cifrar.
 
