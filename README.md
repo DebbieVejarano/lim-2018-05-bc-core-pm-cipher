@@ -27,7 +27,7 @@ npm instal
 ***
 # Objetivo
 El proyecto responde al reto de crear una aplicación que permita, a un grupo de amigos que planean una fiesta sorpresa, enviar mensajes cifrados y que posean una interfaz para descifrarlos.
-![](https://subefotos.com/ver/?eb6a5352fc51d649b95f70c5a48a1bb6o.png#codigos) 
+![](https://fotos.subefotos.com/eb6a5352fc51d649b95f70c5a48a1bb6o.png) 
 
 ## Definición del producto
 
