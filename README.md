@@ -27,6 +27,7 @@ npm instal
 ***
 # Objetivo
 El proyecto responde al reto de crear una aplicación que permita, a un grupo de amigos que planean una fiesta sorpresa, enviar mensajes cifrados y que posean una interfaz para descifrarlos.
+(https://subefotos.com/ver/?eb6a5352fc51d649b95f70c5a48a1bb6o.png#codigos) 
 
 ## Definición del producto
 
@@ -35,6 +36,8 @@ El proyecto responde al reto de crear una aplicación que permita, a un grupo de
 **Objetivo de los usuarios:** Enviar mensajes encriptados y poder descifrarlos en una interfaz sencilla y que no permita al cumpleañero enterarse de nada.
 
 **Consideraciones para la resolución de problemas de usuarios:** El interfaz permite a los usuarios cifrar y descifrar mensajes cortos y largos, con una cantidad de desplazamientos que ellos puedan escoger. Además, es intuituvo y rápido de aaprender a urilizar. Y finalmente, adaptable a dispositivos móviles.
+
+(https://subefotos.com/ver/?1c9ae6057d7c2f95ba26068aba7e06eco.png#codigos)
 
 ## Interfaz
 El interfaz permite que el usuario:
@@ -58,5 +61,7 @@ Encontrarás entre los archivos:
 * En la carpeta src, `cipher.js` contiene un objeto y dos métodos que se encargan de cifrar y descifrar. Por otro lado, en `index.js`se escuchan los eventos del DOM que invocan a los métodos de `cipher.js`.
 
 * En la carpeta test, se encuentra `cipher.spec.js`. Aquí se almacena el testing.
+
+* Las fuentes se tomaron de foonts.google.com y los íconos de fontawesome.com
 
 

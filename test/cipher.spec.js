@@ -82,7 +82,7 @@ describe('cipher', () => {
         assert.equal(typeof cipher.createCipherWithOffset().decode, 'function')
       });
 
-      it('debería retornar "haféqwulfd" para cipher.createCipherWithOffset(33).decode("excéntrica")', () => {
+      it('debería retornar "excéntrica" para cipher.createCipherWithOffset(33).decode("haféqwulfd")', () => {
         let result = cipher.createCipherWithOffset(3).decode("haféqwulfd");
         assert.equal(result, "excéntrica");
         });
