@@ -27,7 +27,7 @@ npm instal
 ***
 # Objetivo
 El proyecto responde al reto de crear una aplicación que permita, a un grupo de amigos que planean una fiesta sorpresa, enviar mensajes cifrados y que posean una interfaz para descifrarlos.
-![Alt text](https://subefotos.com/ver/?eb6a5352fc51d649b95f70c5a48a1bb6o.png#codigos) 
+![](https://subefotos.com/ver/?eb6a5352fc51d649b95f70c5a48a1bb6o.png#codigos) 
 
 ## Definición del producto
 
@@ -37,7 +37,7 @@ El proyecto responde al reto de crear una aplicación que permita, a un grupo de
 
 **Consideraciones para la resolución de problemas de usuarios:** El interfaz permite a los usuarios cifrar y descifrar mensajes cortos y largos, con una cantidad de desplazamientos que ellos puedan escoger. Además, es intuituvo y rápido de aaprender a urilizar. Y finalmente, adaptable a dispositivos móviles.
 
-![Alt text](https://subefotos.com/ver/?1c9ae6057d7c2f95ba26068aba7e06eco.png#codigos)
+![](https://subefotos.com/ver/?1c9ae6057d7c2f95ba26068aba7e06eco.png#codigos)
 
 ## Interfaz
 El interfaz permite que el usuario:
