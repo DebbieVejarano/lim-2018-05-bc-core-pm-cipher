@@ -1,52 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="incognito.png">
     <title>Envia mensajes secretos</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Fuentes -->    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
   <body>
-    <header class = "headerFormat">
-        <h1 class = "title">CRIPTOMANÍA</h1>
-        <div class="rules">
-            <h2 class="inrules">¿Cómo funciona?</h2>
-            <p class="inrules">¡Muy facil! Primero escoges cuántas posiciones quieres que avance la letra que deseas cambiar. ¿Lo hiciste? Ahora solo cifra y descifra tu mensaje secreto. </p>
-        </div>
+    <header class="header">
+        <h1 class="title bold">LETRAS <i class="fas fa-user-secret"></i> LOCAS</h1>
+        <p class="lead cardofont">¡Mantén a salvo tus mensajes secretos! Escoge cuántas casillas quieres desfasar las letras, cifra, descifra y copia los mensajes a los chats que prefieras </p>
     </header>
 
-    <main>
-
-        <div class="user-number">
-            <label>Avanzar posiciones</label>
-            <input type="text" id="letterJumpUser" class="input-number">
-        </div>
-        <div class="buttoms">
-                <button id="cipherButton" class = "button">Cifrar</button>
-                <button id="decipherButton" class = "button">Descifrar</button>
-        </div>
-
-        <!-- <div class="container-btn"> </div> -->
-            <div class="text-one">
-                <textarea  id="firstText" cols="30" rows="10"></textarea>
+    <main class="main">
+        <div class="first-general bigbox">
+            <div class="first-small box ">
+                <div class="icons">
+                    <button id="changeOne" class="litle-icon"><i class="fas fa-exchange-alt"></i></button>
+                    <button id="copyOne" class="litle-icon copyOne"><i class="fas fa-copy"></i></button>
+                    <button id="cleanOne" class="litle-icon"><i class="fas fa-trash"></i></button>
+                </div>
+                <div class="first text">
+                    <textarea id="firstText" cols="30" rows="10" class="textarea cardofont firstText" placeholder="Ingresa tu mensaje"></textarea>
+                </div>
             </div>
-            
-            
-
-            <div class="text-two">
-                <textarea  id="secondText" cols="30" rows="10"></textarea>
+            <div class="buttons">
+                <div class="to-left">
+                    <label class="bold label">KEY</label>
+                    <input type="number" id="letterJump" class="bold number" value="3">
+                </div>
+                <div class="to-right">
+                    <button id="cipherButton" class="bold button">CIFRA</button>
+                    <button id="decipherButton" class="bold button">DESCIFRA</button>
+                </div>
             </div>
-        
-        <button id="clean" class="button-clean">Limpiar</button>
+        </div>
+
+        <div class="second-general bigbox">
+            <div class="second-small box">
+                <div class="icons">
+                    <button id="changeTwo" class="litle-icon"><i class="fas fa-exchange-alt"></i></button>
+                    <button id="copyTwo" class="litle-icon copyTwo"><i class="fas fa-copy"></i></button>
+                    <button id="cleanTwo" class="litle-icon"><i class="fas fa-trash"></i></button>
+                </div>
+                <div class="second text">
+                    <textarea id="secondText" cols="30" rows="10" class="textarea cardofont secondText"></textarea>                        
+                </div>                
+            </div>
+        </div>
 
     </main>
 
     <footer>
-        <h2>MÁS CRIPTOMANÍA </h2>
-        <span><a href="#">Envía tu código por whatsapp </a></span>
+        <p class="cardofont footer">"Todos tenemos secretos; solo que algunos, como los míos, son más intensos" <br>A. M.</p>
+    </footer> 
 
-    </footer>
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
